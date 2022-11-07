@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy me!</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <link rel="manifest" href="app.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <style>
+        body {
+            background: #294167;
+            color: white;
+        }
+        a {
+            color: yellow;
+        }
+        main {
+            padding: 100px;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            animation: test 16ms;
+            animation-iteration-count: infinite;      
+        }
+        input,button {
+            font-size: larger;
+        }
+        @keyframes test {
+            50% {
+                transform: rotate(180deg)
+            }
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hidden Cam</h1>
+    
+    <p>This is a tool for testing what happens with your webapp while it goes to the background. Keep this tab opened (or installed it as a PWA) and open a second window/tab to the <a href="/dashboard" target="_blank">Dashboard</a></a></p>
+    <main>
+        <input placeholder="Browser name">
+        <button onclick="sync()">Sync</button>
+        <button onclick="workerBlock()">Block Thread Worker</button>
+        <button onclick="swBlock()">Block Thread SW</button>
+        <button onclick="swWaitUntil()">SW WaitUntil</button>
+        <div id="box"></div>
+    </main>
+</body>
+</html>

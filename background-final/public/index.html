@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Background Execution</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <script src="scripts/log.js" defer></script>
+    <script src="scripts/media.js" defer></script>
+    <script src="scripts/background.js" defer></script>
+    <script src="scripts/push.js" defer></script>
+</head>
+
+<body>
+    <h1>Background Execution</h1>
+    <textarea id="logger" readonly></textarea>
+    <main>
+        <section id="media">
+            <h2>Media Playing</h2> 
+            <p>Too Much Funk by Steve Oaks</p> 
+            <audio src="media/audio.mp3"></audio>          
+            <button id="btnPlay">Play</button>
+            <button id="btnStop">Stop</button>
+        </section>          
+        <section id="pip">
+            <h2>Picture in Picture</h2>   
+            <video src="media/video.mp4" width="320" height="240" controls></video>         
+            <button id="btnPiP">Toggle PiP</button>
+        </section>          
+        <section id="background">
+            <h2>Background APIs</h2>
+            <button id="btnBeacon">Send a Beacon</button>
+            <button id="btnSync">Register a Sync</button>
+            <button id="btnPeriodicSync">Register a Periodic Sync</button>
+            <button id="btnFetch">Register a Fetch</button>
+        </section>
+        <section id="push">
+            <h2>Push Notifications</h2>
+            <button id="btnPushSubscribe">Subscribe</button>
+        </section>        
+    </main>
+</body>
+</html>

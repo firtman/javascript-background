@@ -1,0 +1,15 @@
+{
+    "name": "Background",
+    "short_name": "Bground",
+    "display": "standalone",
+    "start_url": "./",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "purpose": "any",
+            "sizes": "512x512"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "hidden-cam-webapp",
+  "version": "1.0.0",
+  "description": "A simple test tool to see what happens with a webapp in the background",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "firt.dev",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.15.2",
+    "socket.io": "^2.3.0"
+  }
+}
